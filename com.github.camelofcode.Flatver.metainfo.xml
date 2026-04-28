@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>com.github.camelofcode.Flatver</id>
+  <name>Flatver</name>
+  <summary>A simple Flatpak version manager</summary>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+  <developer id="com.github.camelofcode">
+    <name>Camel of Code</name>
+  </developer>
+  <description>
+    <p>
+      Flatver is a GUI application to manage Flatpak versions, allowing users to list installed Flatpaks, view their version history, selectively update or downgrade versions, and manage version locks (masking).
+    </p>
+  </description>
+  <launchable type="desktop-id">com.github.camelofcode.Flatver.desktop</launchable>
+  <url type="homepage">https://github.com/camelofcode/flatver</url>
+  <url type="bugtracker">https://github.com/camelofcode/flatver/issues</url>
+  <content_rating type="oars-1.1" />
+</component>

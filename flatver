@@ -1,0 +1,4 @@
+#!/bin/sh
+export XDG_DATA_DIRS="/var/lib/flatpak/exports/share:$HOME/.local/share/flatpak/exports/share:/var/home/$USER/.local/share/flatpak/exports/share:$XDG_DATA_DIRS"
+export PYTHONPATH="/app/share/flatver:$PYTHONPATH"
+exec python3 /app/share/flatver/main.py "$@"

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Flatver
+Comment=A Flatpak manager built with GTK4 and Python
+Exec=flatver
+Icon=com.github.camelofcode.Flatver
+Terminal=false
+Type=Application
+Categories=Utility;System;
+StartupNotify=true

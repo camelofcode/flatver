@@ -9,6 +9,8 @@ class FlatpakManager:
     @staticmethod
     def _run_cmd(cmd: List[str]) -> subprocess.CompletedProcess:
         # We run without a tty to force machine-readable/tab-separated output where applicable
+        if os.path.exists('/.flatpak-info'):
+            cmd = ['flatpak-spawn', '--host'] + cmd
         return subprocess.run(cmd, capture_output=True, text=True, env={**os.environ, "PAGER": "cat"})
 
     @staticmethod

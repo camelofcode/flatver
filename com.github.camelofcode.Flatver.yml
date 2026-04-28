@@ -1,0 +1,29 @@
+app-id: com.github.camelofcode.Flatver
+runtime: org.gnome.Platform
+runtime-version: '46'
+sdk: org.gnome.Sdk
+command: flatver
+finish-args:
+  - --share=ipc
+  - --socket=fallback-x11
+  - --socket=wayland
+  - --device=dri
+  - --talk-name=org.freedesktop.Flatpak
+  - --filesystem=/var/lib/flatpak/exports/share/icons:ro
+  - --filesystem=xdg-data/flatpak/exports/share/icons:ro
+  - --filesystem=/var/lib/flatpak/app:ro
+  - --filesystem=xdg-data/flatpak/app:ro
+modules:
+  - name: flatver
+    buildsystem: simple
+    build-commands:
+      - install -D flatver /app/bin/flatver
+      - install -D main.py /app/share/flatver/main.py
+      - cp -r core /app/share/flatver/core
+      - cp -r gui /app/share/flatver/gui
+      - install -D flatver.svg /app/share/icons/hicolor/scalable/apps/com.github.camelofcode.Flatver.svg
+      - install -D com.github.camelofcode.Flatver.desktop /app/share/applications/com.github.camelofcode.Flatver.desktop
+      - install -D com.github.camelofcode.Flatver.metainfo.xml /app/share/metainfo/com.github.camelofcode.Flatver.metainfo.xml
+    sources:
+      - type: dir
+        path: .

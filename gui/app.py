@@ -8,7 +8,7 @@ from gui.window import MainWindow
 
 class FlatpakManagerApp(Adw.Application):
     def __init__(self):
-        super().__init__(application_id='com.kris.FlatpakManager')
+        super().__init__(application_id='com.github.camelofcode.Flatver')
 
     def do_activate(self):
         win = self.props.active_window

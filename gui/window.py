@@ -11,6 +11,7 @@ class MainWindow(Adw.ApplicationWindow):
         super().__init__(*args, **kwargs)
         self.set_default_size(1000, 700)
         self.set_title("Flatpak Manager")
+        self.set_icon_name("com.github.camelofcode.Flatver")
         
         self.split_view = Adw.NavigationSplitView()
         self.set_content(self.split_view)
