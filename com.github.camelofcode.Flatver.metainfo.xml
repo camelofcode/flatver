@@ -17,4 +17,30 @@
   <url type="homepage">https://github.com/camelofcode/flatver</url>
   <url type="bugtracker">https://github.com/camelofcode/flatver/issues</url>
   <content_rating type="oars-1.1" />
+  
+  <branding>
+    <color type="primary" scheme_preference="light">#3584e4</color>
+    <color type="primary" scheme_preference="dark">#1a5fb4</color>
+  </branding>
+
+  <screenshots>
+    <screenshot type="default">
+      <!-- TODO: Replace with the actual URL to a screenshot of the app -->
+      <image>https://raw.githubusercontent.com/camelofcode/flatver/main/screenshot.png</image>
+      <caption>Flatver main window showing installed applications</caption>
+    </screenshot>
+  </screenshots>
+
+  <releases>
+    <release version="1.0.0" date="2026-04-28">
+      <description>
+        <p>Initial release of Flatver.</p>
+        <ul>
+          <li>View installed Flatpaks and their version history.</li>
+          <li>Downgrade to specific commits.</li>
+          <li>Mask applications to prevent unwanted auto-updates.</li>
+        </ul>
+      </description>
+    </release>
+  </releases>
 </component>

@@ -25,5 +25,6 @@ modules:
       - install -D com.github.camelofcode.Flatver.desktop /app/share/applications/com.github.camelofcode.Flatver.desktop
       - install -D com.github.camelofcode.Flatver.metainfo.xml /app/share/metainfo/com.github.camelofcode.Flatver.metainfo.xml
     sources:
-      - type: dir
-        path: .
+      - type: git
+        url: https://github.com/camelofcode/flatver.git
+        branch: main
